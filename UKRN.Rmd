@@ -1,0 +1,411 @@
+---
+title: "What is UKRN... . "
+author: "Prof. Thomas Pollet, Northumbria University (thomas.pollet@northumbria.ac.uk)"
+date: "`r format(Sys.Date())` | [disclaimer](http://tvpollet.github.io/disclaimer)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+csl: evolution-and-human-behavior.csl
+bibliography: "references.bib"
+---
+
+
+```{r setup, include=FALSE}
+library(xaringanExtra)
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r xaringan-logo, echo=FALSE}
+xaringanExtra::use_logo("NU2.png")
+```
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+# Below generates a title slide which allows for a logo.
+# Below generates a new class of simulation table, as otherwise it will not fit. (borrowed from other project)
+```
+
+```{r load_refs, echo=FALSE, cache=FALSE, warning=F, results='hide', message=F}
+# need helper file.
+source(here::here("helper.R"))
+library(RefManageR)
+BibOptions(check.entries = FALSE, 
+           bib.style = "authoryear", 
+           style = "markdown",
+           dashed = TRUE)
+file.name <- "references.bib"
+bib <- ReadBib(file.name)
+```
+
+```{r cite_munafo, echo=FALSE, cache=FALSE, warning=F, results='hide', message=F}
+NoCite(bib, "Munafo2014")
+```
+
+
+
+## Outline
+
+* an odd talk... . 
+
+--> sort of goodbye
+
+```{r simpson_fade, out.width = "400px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("https://media.giphy.com/media/jUwpNzg9IcyrK/giphy.gif") 
+```
+
+---
+## Who am I?
+
+* trained in Sociology (Ghent) --> Evolutionary Psychology (Liverpool, NCL).
+
+--
+
+* worked in Social Psychology depts. in Netherlands (Groningen, VU Amsterdam, Leiden) 
+
+--
+
+* Now at Northumbria University (dept. of Psychology)  - UKRN institution lead at Northumbria University - up until now --> Prof. Matt Baillie Smith & Prof. Louise Bracken
+
+```{r who_am_i_fig, out.width = "400px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("https://media.giphy.com/media/C7olQswvzSwAE/giphy.gif") 
+```
+
+
+???
+IL: 'Top Down': 'Senior management'; I meet with and develop policy with UKRN, promote UKRN, liaise with PVC on UKRN goals, and deliver training - I am independent from Local Network Lead (and technically this role is also independent from the University)
+
+---
+## Recent history
+
+* Why care about reproducibility?
+
+--
+
+* I was there when it happened -- sort of ... . 
+
+--
+
+* Similar to Erdős number: 
+
+--> Stapel = 2; Förster = 2; Smeesters = 2; Wansink = 2; Gino = 2;...
+
+```{r fine_fig, out.width = "400px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("this_is_fine.jpg") 
+```
+
+---
+## Things need to change... .
+
+* Witnessed poor practices first hand.
+
+--
+
+* Witnessed a lot of waste... .
+
+--
+
+* Interaction with other disciplines: Anthropology, Economics, Sociology,... .
+
+```{r change_fig, out.width = "400px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("https://media.giphy.com/media/BMXOmkI9ocLntJs5XJ/giphy.gif") 
+```
+
+
+???
+- Lab meeting. 1 in 20 significant
+
+---
+## Some background reading
+
+* `r Citet(bib, "Goldacre2009","Goldacre2014")` : Bad Science / Bad Pharma
+
+* `r Citet(bib, "Chambers2017")` : Seven deadly sins
+
+* `r Citet(bib, "Ritchie2020")` : Science fictions
+
+* [Daniel Nettle's blog](https://www.danielnettle.org.uk/)
+
+
+
+```{r reading_fig, out.width = "400px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("https://media.giphy.com/media/34ZNcoaN5u4hi/giphy.gif") 
+```
+
+---
+## UKRN
+
+* First joined as Local Network Lead (now David Smailes).
+
+--
+
+* Formally joined [UKRN](https://www.ukrn.org/2021/08/13/northumbria-joins-uk-reproducibility-network/) in August 2021. We also joined the Open Research Programme.
+
+
+```{r, out.width = "400px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("UKRN_Logo.png")
+```
+
+---
+## UKRN
+
+The following is based on [UKRN's resources](https://www.ukrn.org/resources/), specifically this [one](https://osf.io/x923p).
+
+--
+
+For the UK research system to be outstanding in conducting and promoting rigorous and transparent research.
+
+The purpose of the UK Reproducibility Network (UKRN) is to enable researchers, institutions, and other stakeholders working in the UK to collaborate, so they are better able to **conduct and promote rigorous, reproducible, and transparent research.**
+
+--
+
+This includes: 
+
+- identifying the factors that affect research rigour and transparency; 
+- identifying, sharing, and integrating effective practice; 
+- supporting a culture of continual improvement; 
+- providing training and support; coordinating action; 
+- supporting inter- and trans-disciplinary research; 
+- influencing actors across the research system; 
+- and offering constructive challenge.
+
+---
+## UKRN: Distribution (Jan. 10th 2024)
+
+```{r, out.width = "600px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("UKRN_distribution.png")
+```
+
+???
+Equivalent RNs : Belgium, Switzerland, to name a few.
+
+---
+## UKRN: stakeholders
+
+[https://www.ukrn.org/stakeholders/](https://www.ukrn.org/stakeholders/)
+
+```{r, out.width = "600px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("stakeholders.jpg")
+```
+
+---
+## UKRN: Growth
+
+```{r, out.width = "600px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("UKRN_growth.png")
+```
+
+---
+## UKRN: Implement Change
+
+```{r, out.width = "600px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("UKRN_change.png")
+```
+
+---
+## UKRN: Mechanisms
+
+```{r, out.width = "800px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("UKRN_mechanism.png")
+```
+
+---
+## UKRN: Open research programme
+
+```{r, out.width = "600px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("UKRN_ORP_outline.png")
+```
+
+---
+## UKRN: Open research programme and UKRN community
+
+
+```{r, out.width = "600px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("UKRN_ORP_Relation.png")
+```
+
+---
+## UKRN: ORP change
+
+```{r, out.width = "600px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("UKRN_ORP_Change.png")
+```
+
+---
+## UKRN: ORP Training
+
+```{r, out.width = "800px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("UKRN_ORP_Training.png")
+```
+
+---
+## UKRN: ORP Hiring and promotion
+
+```{r, out.width = "800px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("UKRN_ORP_OR4.png")
+```
+
+---
+## UKRN: ORP Indicators
+
+```{r, out.width = "800px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("UKRN_ORP_indicators.png")
+```
+
+---
+## UKRN: How do we achieve change?
+
+```{r, out.width = "800px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("UKRN_support_research_culture.png")
+```
+
+---
+## UKRN: Beyond disciplinary boundaries
+
+```{r, out.width = "800px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("UKRN_beyond_boundaries.png")
+```
+
+---
+## UKRN: Research culture
+
+```{r, out.width = "800px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("UKRN_Research_culture.png")
+```
+
+---
+## UKRN: Resources
+
+```{r, out.width = "800px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("UKRN_generating_resources.png")
+```
+
+---
+## UKRN: dissemination
+
+```{r, out.width = "800px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("UKRN_dissemination.png")
+```
+
+---
+## UKRN: Reproducibility
+
+```{r, out.width = "800px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("UKRN_Reproducibility.png")
+```
+
+---
+## UKRN: Culture change
+
+```{r, out.width = "800px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("UKRN_culture_change.png")
+```
+
+---
+## UKRN: Culture change: Who?
+
+```{r, out.width = "800px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("UKRN_culture_change_who.png")
+```
+
+---
+## Summary
+
+- Brief overview
+
+- UKRN as organisation
+
+- goals and some projects
+
+---
+## Additional Resources
+
+[https://osf.io/x8j9q/wiki/home/](https://osf.io/x8j9q/wiki/home/) / [https://www.youtube.com/channel/UC_gar6y864eLGfX7zJSWd5w/featured](https://www.youtube.com/channel/UC_gar6y864eLGfX7zJSWd5w/featured)
+
+--
+
+* Preprints
+
+--
+
+* Data sharing
+
+--
+
+* Open Access
+
+--
+
+* Open code + Software
+
+--
+
+* Pre-registration / Registered reports
+
+
+---
+## Other things to mention / check out...
+
+* [Octopus](www.octopus.ac)
+
+--
+
+* [DORA](https://sfdora.org/)
+
+
+---
+## What might the future hold?
+
+* Open research will become the norm ?!
+
+--
+
+* Team Science?
+
+```{r, out.width = "400px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("https://media.giphy.com/media/xUPGcjQ6dJEjH5uwMw/giphy-downsized-large.gif")
+```
+
+
+---
+## Any Questions?
+
+[http://tvpollet.github.io](http://tvpollet.github.io)
+
+Twitter: @tvpollet ; Mastodon: @tvpollet@sciences.social
+
+```{r, out.width = "400px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("https://media.giphy.com/media/3ohzdRoOp1FUYbtGDu/giphy.gif")
+```
+
+---
+## Acknowledgments
+
+I am greatly indebted to my colleagues who helped me along the way and UKRN (Any mistakes are my own). This talk is based on [https://osf.io/x923p](https://osf.io/x923p)
+
+Slides were built with [Xaringan](https://github.com/yihui/xaringan) and [XaringanExtra](https://pkg.garrickadenbuie.com/xaringanExtra/). Many thanks to those building packages and supporting the [R](https://www.r-project.org/) eco-system.
+
+You for listening!
+
+```{r, out.width = "400px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("https://media.giphy.com/media/10avZ0rqdGFyfu/giphy.gif")
+```
+
+```{r, echo=F, warning=F,results='hide'}
+# THOMAS COPY REFERENCE SLIDES
+
+```
+
+---
+## References and further reading (errors = blame RefManageR)
+
+```{r, 'refs', results='asis', echo=FALSE, warning=F}
+PrintBibliography(bib, start=1, end=5)
+```
+
+
+
