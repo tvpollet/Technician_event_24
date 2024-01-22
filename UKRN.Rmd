@@ -321,10 +321,16 @@ knitr::include_graphics("UKRN_culture_change_who.png")
 
 - goals and some projects
 
+```{r, out.width = "400px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("https://media.giphy.com/media/dsKnRuALlWsZG/giphy.gif")
+```
+
 ---
 ## Additional Resources
 
-[https://osf.io/x8j9q/wiki/home/](https://osf.io/x8j9q/wiki/home/) / [https://www.youtube.com/channel/UC_gar6y864eLGfX7zJSWd5w/featured](https://www.youtube.com/channel/UC_gar6y864eLGfX7zJSWd5w/featured)
+[https://osf.io/x8j9q/wiki/home/](https://osf.io/x8j9q/wiki/home/) 
+
+[https://www.youtube.com/channel/UC_gar6y864eLGfX7zJSWd5w/featured](https://www.youtube.com/channel/UC_gar6y864eLGfX7zJSWd5w/featured)
 
 --
 
@@ -346,6 +352,9 @@ knitr::include_graphics("UKRN_culture_change_who.png")
 
 * Pre-registration / Registered reports
 
+```{r, out.width = "300px", echo=FALSE, fig.align='center'}
+knitr::include_graphics("https://media.giphy.com/media/vgsj2QCJGv7Xi/giphy.gif")
+```
 
 ---
 ## Other things to mention / check out...
